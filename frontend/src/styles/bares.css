@@ -1,0 +1,31 @@
+table {
+  background-color: #dfdaae;
+  padding: 15px 10px;
+}
+
+.bar-distancia {
+  padding: 3px 0px;
+}
+
+.tabela-nome {
+  width: 10%;
+}
+
+.tabela-endereco {
+  width: 16%;
+}
+
+.tabela-proximo {
+  width: 16%;
+}
+
+.tabela-raio {
+  width: 16%;
+  padding: 3px 0px;
+
+}
+
+.linha-bar {
+  line-height: 2;
+  border: 1px solid black;
+}
