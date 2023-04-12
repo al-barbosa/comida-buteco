@@ -44,13 +44,11 @@ class Scrapper():
         return bar_df.to_dict('records')
 
     def get_cidades(self):
-        print('OPA')
         url = 'https://comidadibuteco.com.br/category/butecos'
         response = urlopen(url)
         html = response.read()
         soup = BeautifulSoup(html, 'html.parser')
         cidades = [x.get_text() for x in soup.find_all('option', {'class': 'level-0'})]
-        print('OI')
         return cidades
 
     def __get_lista_bares(self, total_paginas, url):

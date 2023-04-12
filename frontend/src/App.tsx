@@ -5,7 +5,7 @@ import BarDataI from './interfaces/barInterface';
 import './App.css';
 
 function App() {
-  const [bares, setBares] = useState<BarDataI[]>([]);
+  const [bares, setBares] = useState<BarDataI[] | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
 
   return (

@@ -3,7 +3,7 @@ import BarDataI from '../interfaces/barInterface';
 import '../styles/bares.css'
 
 interface Props {
-  bares: BarDataI[],
+  bares: BarDataI[] | null,
   loading: boolean;
 }
 
@@ -18,8 +18,7 @@ function Bares(props: Props) {
 
   return (
     <div>
-      { loading ? <h1>Oi</h1> : <h2>Não</h2> }
-      <table>
+      { loading ?  <div className="loader"></div>  : (bares && <table>
         <thead>
           <tr>
             <th>Nome</th>
@@ -74,7 +73,7 @@ function Bares(props: Props) {
           ))}
 
         </tbody>
-      </table>
+      </table>) }
     </div>
   );
 }

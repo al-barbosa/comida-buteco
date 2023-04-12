@@ -1,6 +1,7 @@
 table {
   background-color: #dfdaae;
-  padding: 15px 10px;
+  padding-top: 25px;
+  margin: 35px 10px;
 }
 
 .bar-distancia {
@@ -28,4 +29,24 @@ table {
 .linha-bar {
   line-height: 2;
   border: 1px solid black;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #e2e2be;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
